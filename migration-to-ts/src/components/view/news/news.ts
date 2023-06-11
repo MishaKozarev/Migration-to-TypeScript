@@ -57,10 +57,10 @@ class News {
                 fragment.append(newsClone);
             });
         }
-        const newsWrapper: HTMLElement | null = document.querySelector('.news');
-        if (newsWrapper) {
-            newsWrapper.innerHTML = '';
-            newsWrapper.appendChild(fragment);
+        const newsMain: HTMLElement | null = document.querySelector('.news');
+        if (newsMain) {
+            newsMain.innerHTML = '';
+            newsMain.appendChild(fragment);
         }
     }
 }

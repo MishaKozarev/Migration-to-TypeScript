@@ -9,3 +9,8 @@ export interface NewsResponse {
     description: string;
     url: string;
 }
+
+export interface  SourcesResponse {
+    name: string;
+    id: string;
+}
