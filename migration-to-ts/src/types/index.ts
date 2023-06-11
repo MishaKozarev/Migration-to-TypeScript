@@ -10,7 +10,12 @@ export interface NewsResponse {
     url: string;
 }
 
-export interface  SourcesResponse {
+export interface SourcesResponse {
     name: string;
     id: string;
+}
+
+export interface ArticlesResponse {
+    articles: NewsResponse[];
+    sources: SourcesResponse[];
 }
