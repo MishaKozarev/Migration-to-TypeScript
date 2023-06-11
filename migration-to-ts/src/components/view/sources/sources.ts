@@ -17,7 +17,7 @@ class Sources {
 
                 const sourceCloneId: HTMLElement | null = sourceClone.querySelector('.source__item');
                 if (sourceCloneId) {
-                    sourceCloneId.setAttribute('data-sou  rce-id', item.id);
+                    sourceCloneId.setAttribute('data-source-id', item.id);
                 }
 
                 fragment.append(sourceClone);
