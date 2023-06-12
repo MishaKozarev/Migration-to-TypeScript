@@ -34,9 +34,3 @@ export interface ResApi {
     ok: boolean;
     json(): Promise<string>;
 }
-
-export interface Event {
-    e: HTMLElement;
-    target: HTMLElement;
-    currentTarget: HTMLElement;
-}

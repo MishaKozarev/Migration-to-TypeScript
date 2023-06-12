@@ -1,5 +1,4 @@
 import AppLoader from './appLoader';
-import { Event } from '../../types/index';
 
 type Callback<T> = (date: T) => void;
 
@@ -16,7 +15,6 @@ class AppController extends AppLoader {
     getNews<T>(e: Event, callback: Callback<T>) {
         let target = e.target as HTMLElement;
         const newsContainer = e.currentTarget as HTMLElement;
-
         while (target !== newsContainer) {
             if (target.classList.contains('source__item')) {
                 const sourceId: string | null = target.getAttribute('data-source-id');
