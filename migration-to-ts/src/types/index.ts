@@ -26,11 +26,17 @@ export interface OptionsApiKey {
 
 export interface OptionsEndpoint {
     endpoint: string;
-    options: OptionsApiKey;
+    options?: OptionsApiKey;
 }
 export interface ResApi {
     statusText: string;
     status: number;
     ok: boolean;
     json(): Promise<string>;
+}
+
+export interface Event {
+    e: HTMLElement;
+    target: HTMLElement;
+    currentTarget: HTMLElement;
 }
