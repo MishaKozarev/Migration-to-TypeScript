@@ -1,7 +1,7 @@
 import Loader from './loader';
 
 enum LoaderUrlApiKey {
-    url = 'https://newsapi.org/v2/',
+    url = 'https://rss-news-api.onrender.com/',
     keyAPI = 'cf436ac028804f3e8cb88556155d0522',
 }
 
