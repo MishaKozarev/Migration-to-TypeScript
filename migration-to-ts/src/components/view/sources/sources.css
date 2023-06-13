@@ -1,8 +1,7 @@
 .sources {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
     width: 100%;
-    height: 120px;
     overflow: auto;
     align-items: center;
     font: 300 1em 'Fira Sans', sans-serif;
@@ -31,4 +30,20 @@
 .source__item-name {
     font-weight: 400;
     white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .sources {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+@media (max-width: 800px) {
+    .sources {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+@media (max-width: 520px) {
+    .sources {
+        grid-template-columns: repeat(1, 250px);
+    }
 }
