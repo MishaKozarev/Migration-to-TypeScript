@@ -8,12 +8,11 @@ export interface NewsResponse {
     title: string;
     description: string;
     url: string;
-}
-
-export interface SourcesResponse {
     name: string;
     id: string;
 }
+
+export type SourcesResponse = Pick<NewsResponse, 'name' | 'id'>;
 
 export interface ArticlesResponse {
     articles: NewsResponse[];
@@ -29,8 +28,8 @@ export interface OptionsEndpoint {
     options?: OptionsApiKey;
 }
 export interface ResApi {
-    statusText: string;
-    status: number;
-    ok: boolean;
+    statusText: Partial<string>;
+    status: Partial<number>;
+    ok: Partial<boolean>;
     json(): Promise<string>;
 }
