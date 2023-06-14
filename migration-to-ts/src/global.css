@@ -14,6 +14,26 @@ header {
 header h1 {
     font-size: 40px;
     font-weight: 800;
+    text-align: center;
+}
+
+header .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .date, .time {
+    font-size: 20px;
+    font-weight: 800;
 }
 
 footer {
@@ -57,3 +77,4 @@ footer .footer__rsschool-logo {
     background-size: 90px 45px;
     background-color: #17181c;
 }
+
