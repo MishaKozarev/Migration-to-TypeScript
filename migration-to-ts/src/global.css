@@ -36,3 +36,24 @@ footer .copyright a:hover {
 footer .copyright:before {
     content: '©';
 }
+footer .footer__github-logo {
+    margin: 0 10px 0;
+    background: url('../src/assets/icon_github.png');
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+footer .footer__text {
+    color: white;
+}
+footer .footer__rsschool-logo {
+    margin-left: 10px;
+    fill: white;
+    background: url('../src/assets/rs_school.svg');
+    width: 90px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: 90px 45px;
+    background-color: #17181c;
+}
