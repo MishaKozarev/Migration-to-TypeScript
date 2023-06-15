@@ -44,6 +44,11 @@ header .date, .time {
     font-weight: 800;
 }
 
+header .header__text {
+    font-size: 17px;
+    font-weight: 400;
+}
+
 footer {
     height: 100px;
     display: flex;
