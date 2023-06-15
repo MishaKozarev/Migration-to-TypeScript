@@ -5,7 +5,6 @@ export class CurrentTime {
         if (time) {
             time.textContent = dateNew.toLocaleTimeString();
             setInterval(this.showTime, 1000);
-            console.log(time.textContent);
         }
     }
 }
