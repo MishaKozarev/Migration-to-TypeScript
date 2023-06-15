@@ -7,6 +7,9 @@ body {
     font-family: sans-serif;
 }
 
+p {
+    margin: 0;
+}
 header {
     padding: 10px 30px;
 }
@@ -18,17 +21,22 @@ header h1 {
 }
 
 header .header__container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
 header .header__content {
-    width: 100%;
+    width: 200px;
+}
+
+.header__date, .header__time {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 header .date, .time {
