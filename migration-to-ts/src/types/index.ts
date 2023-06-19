@@ -33,3 +33,5 @@ export interface ResApi {
     ok: Partial<boolean>;
     json(): Promise<string>;
 }
+
+export type Callback<T> = (date: T) => void;

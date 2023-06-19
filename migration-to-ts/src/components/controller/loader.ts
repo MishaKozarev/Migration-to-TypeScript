@@ -1,6 +1,6 @@
-import { OptionsApiKey, OptionsEndpoint, ResApi } from '../../types/index';
+import { OptionsApiKey, OptionsEndpoint, ResApi, Callback } from '../../types/index';
 
-type Callback<T> = (date: T) => void;
+// type Callback<T> = (date: T) => void;
 
 class Loader {
     private baseLink: string;
